@@ -29,6 +29,6 @@ steps:
         echo "Failure successfully handled"
  
 outputArtifacts:
-- name: kafka_2.13-3.0.0
+- name: kafka_2_13_3_0_0
   type: BINARY
   location: ./core/build/distributions/kafka_2.13-3.0.0-SNAPSHOT.tgz
