@@ -1,6 +1,6 @@
 version: 0.1
 component: build
-timeoutInSeconds: 6000
+timeoutInSeconds: 6500
 runAs: root
 shell: bash
 env:
@@ -17,7 +17,7 @@ env:
 steps:
 - type: Command
   name: "Build kafka"
-  timeoutInSeconds: 400
+  timeoutInSeconds: 6000
   command: |
     ./gradlew clean releaseTarGz
     echo "Build Done"
