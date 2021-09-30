@@ -16,11 +16,65 @@ env:
  
 steps:
 - type: Command
-  name: "Build kafka"
+  name: "Build kafka1"
   timeoutInSeconds: 6000
   command: |
     ./gradlew clean releaseTarGz
     echo "Build Done"
+- type: Command
+ name: "Build kafka2"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+- type: Command
+ name: "Build kafka3"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+- type: Command
+ name: "Build kafka4"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+- type: Command
+ name: "Build kafka5"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+- type: Command
+ name: "Build kafka6"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+- type: Command
+ name: "Build kafka7"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+ - type: Command
+ name: "Build kafka8"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+ - type: Command
+ name: "Build kafka9"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
+  - type: Command
+ name: "Build kafka10"
+ timeoutInSeconds: 6000
+ command: |
+  ./gradlew clean releaseTarGz
+  echo "Build Done"
   onFailure:
     - type: Command
       timeoutInSeconds: 400
